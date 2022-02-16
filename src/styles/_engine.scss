@@ -1,0 +1,67 @@
+.engine {
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  .wrapper {
+    text-align: center;
+    flex: 1;
+
+    img {
+      min-height: 80px;
+    }
+
+    &__line {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background-color: red;
+      margin: 20px 0 50px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        background-color: red;
+        border-radius: 50%;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        height: 40px;
+        width: 2px;
+        background-color: red;
+      }
+
+      .arrows {
+        position: absolute;
+        top: 50%;
+        right: 1px;
+        transform: translate(50%, -50%);
+        width: 111px;
+        height: 50px;
+        background: url(../images/engine/arrows.svg);
+      }
+    }
+
+    &:last-child {
+      .arrows {
+        display: none;
+      }
+    }
+  }
+}
