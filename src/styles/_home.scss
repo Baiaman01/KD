@@ -1,0 +1,160 @@
+.home {
+  max-height: 100vh;
+  background: url(../images/home/bg.png) center / cover no-repeat;
+  padding-top: 234px;
+  color: #fff;
+  display: flex;
+
+  .splide {
+    height: 100%;
+  }
+
+  .splide__slide {
+    position: relative;
+
+  }
+
+  &__img {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 741px;
+    height: 492px;
+  }
+
+  &__title {
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 76px;
+    text-transform: uppercase;
+    max-width: 700px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__desc {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 25px;
+    width: 570px;
+
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin-bottom: 52px;
+    row-gap: 21px;
+    column-gap: 30px;
+    padding-left: 0;
+  }
+
+  &__item {
+    width: calc(50% - 30px);
+    max-width: 169px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    position: relative;
+    padding-left: 27px;
+    list-style: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 16px;
+      height: 8.5px;
+      background: url(../images/home/galo4ki.svg);
+    }
+  }
+  &__title2 {
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 76px;
+    text-transform: uppercase;
+
+    span {
+      font-weight: 700;
+    }
+  }
+  &__items {
+    padding-top: 45px;
+  }
+  .items2 {
+    padding-top: 58px;
+  }
+  &__car2 {
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
+  &__car3 {
+    position: absolute;
+    top: -20px;
+    right: 40px;
+  }
+  
+  .fz {
+    padding-top: 23px;
+  }
+  .splide__pagination {
+    gap: 80px;
+    justify-content: flex-start;
+    padding-top: 5px;
+
+    li {
+      position: relative;
+
+      &:not(:last-child)::after {
+        content: '';
+        width: 1px;
+        height: 40px;
+        background-color: #fff;
+        position: absolute;
+        top: calc(100% + 20px);
+        left: 50%;
+      }
+
+      &:nth-child(1) {
+        button::before {
+          content: '01';
+        }
+      }
+      &:nth-child(2) {
+        button::before {
+          content: '02';
+        }
+      }
+      &:nth-child(3) {
+        button::before {
+          content: '03';
+        }
+      }
+      &:nth-child(4) {
+        button::before {
+          content: '04';
+        }
+      }
+    }
+  }
+  .splide__pagination__page {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+
+    &.is-active {
+      &::before {
+        color: #fff;
+      }
+    }
+
+    &::before {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

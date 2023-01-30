@@ -1,0 +1,77 @@
+.about {
+  position: relative;
+  padding: 104px 0 111px;
+  background-image: url('../../src/images/about/aboutbg.svg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & p {
+    margin: 0;
+  }
+
+  &__title {
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 36%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__desc {
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    line-height: 36%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8890A0;
+  }
+
+  &__row {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__card {
+    width: 370px;
+  }
+
+  &__card_descr {
+    font-family: Manrope, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    height: 250px;
+
+  }
+
+  &__card_flex {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  .margin {
+    margin-bottom: 60px;
+  }
+
+  &__card_flex p {
+    font-family: Manrope, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+  }
+  .white {
+    color: white;
+  }
+}

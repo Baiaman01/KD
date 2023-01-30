@@ -1,0 +1,16 @@
+$blue: #3874CB;
+
+.custom-btn {
+  background: linear-gradient(180deg, #3874CB 0%, #1C57AE 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 70px;
+  color: #fff;
+  min-height: 45px;
+  padding: 0 25px;
+  border: none;
+
+  &:hover {
+    color: #fff;
+    background: linear-gradient(180deg, #af0c27 0%, #7c0115 100%);
+  }
+}
